@@ -1,0 +1,30 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 100;
+    padding: 100;
+    background-color: wheat
+;
+}
+header{
+    background-color: #15bc47bc;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+.container h3{
+    margin: 1rcap;
+}
+
+.container img{
+    margin: 10;
+}
+
+footer{
+    background-color:#1d321e;
+    color:white; 
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom:0%;
+}

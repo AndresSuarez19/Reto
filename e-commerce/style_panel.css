@@ -1,0 +1,225 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+body{
+    background-color: wheat;
+}
+
+.header{
+    background-color: #15bc47bc;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 10px 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+
+}
+
+.header .nav-links li a:hover{
+    color: #1d321e;
+}
+
+.presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.presentacion h1{
+    font-size: 40px;
+}
+
+.presentacion p{
+    font-size: 22px;
+}
+
+/* Estilo general del card */
+.card {      
+    width: 200px;      /* Ancho de la tarjeta */
+    border: 1px solid #ddd;       /* Borde de la tarjeta */
+    border-radius: 8px;           /* Bordes redondeados */
+    overflow: hidden;             /* Asegura que los bordes redondeados se apliquen a la imagen */
+    font-family: Arial, sans-serif;
+    background-color: #fff;       /* Fondo blanco */
+    margin: 0px;
+    transition: all 0.3s;
+}
+
+/* Imagen del card */
+.card img{
+    width: 250px;
+    height: 290px;
+    object-fit: cover;
+    
+}
+
+.card:hover{
+    transform: scale(1.2);
+}
+
+/* Contenido del card */
+.card-body {
+    padding: 16px;                /* Espaciado interno */
+
+}
+
+.card-body button {
+cursor: pointer;
+    
+}
+
+/* Título del card */
+.card-title {
+    font-size: 1.1rem;
+    margin: 0 0 8px;
+    color: #333;
+}
+
+/* Texto del card */
+.card-text {
+    font-size: 1rem;
+    color: #555;
+    margin: 0 0 16px;
+    line-height: 1.4;
+}
+
+
+
+.Productos {
+    display: flex;
+    padding-top: 20px;
+    gap: 30px;
+    justify-content: flex-start;
+    
+}
+
+.container{
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+.container p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.carrito {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  
+  
+  .carrito h2 {
+    margin-bottom: 15px;
+  }
+  
+  .carrito ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .carrito li {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  #cart-total {
+    font-weight: bold;
+  }
+  
+/* Estilos del botón dentro del navbar */
+#open-cart-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #open-cart-btn:hover {
+    background-color: #f44336; /* Cambia de color cuando el mouse pasa sobre él */
+  }
+  
+/* Sidebar: posición inicial fuera de la pantalla */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Oculto fuera de la pantalla */
+    width: 300px;
+    height: 100%;
+    background-color: #f4f4f4;
+    box-shadow: -3px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  /* Contenido del sidebar */
+  .sidebar-content {
+    padding: 20px;
+  }
+  
+  /* Botón de cerrar */
+  #close-cart-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: block;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Mostrar el sidebar */
+.sidebar.open {
+    right: 0; /* Cuando está abierto, se desliza dentro de la pantalla */
+  }
+  
+
